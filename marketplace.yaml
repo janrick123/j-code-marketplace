@@ -9,24 +9,47 @@ extensions:
   - id: jcode.templates
     name: JCode Project Templates
     type: templates
+    category: Templates
+    subcategory: Project
     version: 0.2.0
     path: extensions/template-1
     repo: https://github.com/janrick123/j-code-ext-template-1.git
+    suggests:
+      extensions: [jcode.lang.csharp, jcode.lang.typescript, jcode.lang.javascript]
+      sdks: [dotnet, nodejs]
   - id: jcode.lang.csharp
     name: C# Language Pack
     type: language
+    category: Languages
+    subcategory: C#
     version: 0.2.0
     path: extensions/csharp
     repo: https://github.com/janrick123/j-code-ext-csharp.git
+    requires:
+      sdks: [dotnet]
+    suggests:
+      lsps: [csharp-language-server]
   - id: jcode.lang.javascript
     name: JavaScript Language Pack
     type: language
+    category: Languages
+    subcategory: JavaScript
     version: 0.1.0
     path: extensions/javascript
     repo: https://github.com/janrick123/j-code-ext-javascript.git
+    requires:
+      sdks: [nodejs]
+    suggests:
+      lsps: [typescript-language-server]
   - id: jcode.lang.typescript
     name: TypeScript Language Pack
     type: language
+    category: Languages
+    subcategory: TypeScript
     version: 0.1.0
     path: extensions/typescript
     repo: https://github.com/janrick123/j-code-ext-typescript.git
+    requires:
+      sdks: [nodejs]
+    suggests:
+      lsps: [typescript-language-server]
