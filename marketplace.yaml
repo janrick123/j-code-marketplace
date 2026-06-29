@@ -22,7 +22,7 @@ extensions:
     jext: dist/jcode.lang.csharp-0.2.0.jext
     fingerprint:
       algo: sha256
-      value: 840c3a3e406eb678fcbd5aacd8644495a7af896146f07a754e80030cb7b98349
+      value: c898bd3d40c03374a97d65c9160a5cee27bda83b0883084d0c6340b0e40caa6f
     requires:
       sdks:
         - dotnet
@@ -34,9 +34,10 @@ extensions:
         - csharp-language-server
       extensions: []
     images:
-      icon: ''
+      icon: media/icon.png
       samples: []
       walkthrough: []
+    icon: dist/icons/jcode.lang.csharp.png
   - uniqueName: jcode.lang.javascript
     name: JavaScript Language Pack
     type: language
@@ -49,7 +50,7 @@ extensions:
     jext: dist/jcode.lang.javascript-0.1.0.jext
     fingerprint:
       algo: sha256
-      value: df8f07e3d9ccf6821efa7d6e7d268d5b497960882a89df300a2b425a41d4190a
+      value: 040b8829d9b1dca899b8d0447df30022038d06c5585dc3117316abd248a8e574
     requires:
       sdks:
         - nodejs
@@ -61,9 +62,10 @@ extensions:
         - typescript-language-server
       extensions: []
     images:
-      icon: ''
+      icon: media/icon.png
       samples: []
       walkthrough: []
+    icon: dist/icons/jcode.lang.javascript.png
   - uniqueName: jcode.lang.typescript
     name: TypeScript Language Pack
     type: language
@@ -76,7 +78,7 @@ extensions:
     jext: dist/jcode.lang.typescript-0.1.0.jext
     fingerprint:
       algo: sha256
-      value: d1baead01a0357ff350eb3921dd3b22a74f1e0069806961462656300f40ab674
+      value: df325438c67c4caf05aa673497a73b893ec128c38e74bc018c3b2f4634c1a0a6
     requires:
       sdks:
         - nodejs
@@ -88,9 +90,10 @@ extensions:
         - typescript-language-server
       extensions: []
     images:
-      icon: ''
+      icon: media/icon.png
       samples: []
       walkthrough: []
+    icon: dist/icons/jcode.lang.typescript.png
   - uniqueName: jcode.templates
     name: JCode Project Templates
     type: templates
@@ -103,7 +106,7 @@ extensions:
     jext: dist/jcode.templates-0.2.1.jext
     fingerprint:
       algo: sha256
-      value: c2d18f199fbea683b4d579cae7436a994654a95c376ce1154deb2e5a5f3b677d
+      value: cefe403d57c615a7a5f1e14ecb21cb576b9e69e51735c41e417d7e68a86f5e5d
     requires:
       sdks: []
       lsps: []
@@ -118,6 +121,7 @@ extensions:
         - jcode.lang.typescript
         - jcode.lang.javascript
     images:
-      icon: ''
+      icon: media/icon.png
       samples: []
       walkthrough: []
+    icon: dist/icons/jcode.templates.png
