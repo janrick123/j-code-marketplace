@@ -130,6 +130,35 @@ extensions:
       samples: []
       walkthrough: []
     icon: dist/icons/jcode.lang.javascript.png
+  - uniqueName: jcode.lang.kotlin
+    name: Kotlin Language Pack
+    publisher: jcode
+    type: language
+    version: 0.1.0
+    category: Languages
+    subcategory: Kotlin
+    shortDescription: Coloring, completions, snippets, and a basic formatter for Kotlin.
+    minJCodeVersion: 1.0.0
+    targetJCodeVersion: 1.0.0
+    jext: dist/jcode.lang.kotlin-0.1.0.jext
+    fingerprint:
+      algo: sha256
+      value: 8c923f74d811c66de9bd603bf65b650e9171fadfd29620d9b4dce11d52f30746
+    authors:
+      - jcode
+    requires:
+      sdks: []
+      lsps: []
+      extensions: []
+    suggests:
+      sdks: []
+      lsps:
+        - kotlin-language-server
+      extensions: []
+    images:
+      icon: null
+      samples: []
+      walkthrough: []
   - uniqueName: jcode.lang.markup
     name: Markup Language Pack
     publisher: jcode
@@ -217,6 +246,39 @@ extensions:
       samples: []
       walkthrough: []
     icon: dist/icons/jcode.lang.typescript.png
+  - uniqueName: jcode.pack.android
+    name: Android Dev Pack
+    publisher: jcode
+    type: language
+    version: 0.1.0
+    category: Languages
+    subcategory: Android
+    shortDescription: >-
+      Android XML + Gradle language support, helpers, and an Android app project template (Kotlin
+      features via the Kotlin Language Pack).
+    minJCodeVersion: 1.0.0
+    targetJCodeVersion: 1.0.0
+    jext: dist/jcode.pack.android-0.1.0.jext
+    fingerprint:
+      algo: sha256
+      value: 1ffcfbbb677aee6a2bfbcb966f1ae87282fb70a73cfd8874517a068a418f11f9
+    authors:
+      - jcode
+    requires:
+      sdks:
+        - android-prereqs
+      lsps: []
+      extensions:
+        - jcode.lang.kotlin
+    suggests:
+      sdks: []
+      lsps:
+        - kotlin-language-server
+      extensions: []
+    images:
+      icon: null
+      samples: []
+      walkthrough: []
   - uniqueName: jcode.templates
     name: JCode Project Templates
     publisher: jcode
