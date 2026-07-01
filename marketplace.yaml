@@ -25,7 +25,10 @@ extensions:
     jext: dist/jcode.ext.sqlclient-0.2.0.jext
     fingerprint:
       algo: sha256
-      value: 8d737f66fd4c5779c2758af40239b446d9ea94f7c3e6fa9bb14d7d7ec4576a99
+      value: 78b4126f02382f6d8e3481ae9e959f4084116a6cbcea403976f40f1d0f599c18
+    authors:
+      - jcode
+      - blamspotdev
     requires:
       sdks: []
       lsps: []
