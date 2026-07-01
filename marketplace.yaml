@@ -188,6 +188,36 @@ extensions:
       samples: []
       walkthrough: []
     icon: dist/icons/jcode.lang.markup.png
+  - uniqueName: jcode.lang.python
+    name: Python Language Pack
+    publisher: jcode
+    type: language
+    version: 0.1.0
+    category: Languages
+    subcategory: Python
+    shortDescription: Coloring, completions, snippets, and a basic formatter for Python.
+    minJCodeVersion: 1.0.0
+    targetJCodeVersion: 1.0.0
+    jext: dist/jcode.lang.python-0.1.0.jext
+    fingerprint:
+      algo: sha256
+      value: 4dcfef1c33f7aa165c300e9ca5b59896e428be03583c0af30a75c3b58f16010b
+    authors:
+      - jcode
+    requires:
+      sdks: []
+      lsps: []
+      extensions: []
+    suggests:
+      sdks:
+        - python
+      lsps:
+        - pyright
+      extensions: []
+    images:
+      icon: null
+      samples: []
+      walkthrough: []
   - uniqueName: jcode.lang.stylesheet
     name: Style Sheet Language Pack
     publisher: jcode
@@ -250,7 +280,7 @@ extensions:
     name: Android Dev Pack
     publisher: jcode
     type: language
-    version: 0.1.0
+    version: 0.2.0
     category: Languages
     subcategory: Android
     shortDescription: >-
@@ -258,10 +288,10 @@ extensions:
       features via the Kotlin Language Pack).
     minJCodeVersion: 1.0.0
     targetJCodeVersion: 1.0.0
-    jext: dist/jcode.pack.android-0.1.0.jext
+    jext: dist/jcode.pack.android-0.2.0.jext
     fingerprint:
       algo: sha256
-      value: e0ebff9b365947781dc1f3f0da15d0a884a1588e3be77e055a45d0d34b093928
+      value: 8cd4140adc5ab68d10452b8eebef404e1d5f9ca92d7a2e599f1b2cc4d95c11ae
     authors:
       - jcode
     requires:
@@ -283,16 +313,16 @@ extensions:
     name: JCode Project Templates
     publisher: jcode
     type: templates
-    version: 0.2.2
+    version: 0.3.0
     category: Templates
     subcategory: Project
     shortDescription: First-party project templates scaffolded on-device by the embedded runtime.
     minJCodeVersion: 1.0.0
     targetJCodeVersion: 1.0.0
-    jext: dist/jcode.templates-0.2.2.jext
+    jext: dist/jcode.templates-0.3.0.jext
     fingerprint:
       algo: sha256
-      value: 6e122aabdef94b8852a60a693e8f97a2e45ff84a5484cfc212f12f2267b392b7
+      value: e3c11a79f9e01d3c1709628e222ea05b055df4f877221f0e4540e27944c24e35
     requires:
       sdks: []
       lsps: []
@@ -301,11 +331,13 @@ extensions:
       sdks:
         - dotnet
         - nodejs
+        - python
       lsps: []
       extensions:
         - jcode.lang.csharp
         - jcode.lang.typescript
         - jcode.lang.javascript
+        - jcode.lang.python
     images:
       icon: media/icon.png
       samples: []
