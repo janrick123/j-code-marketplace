@@ -10,6 +10,36 @@ description: >-
   dist/. The JCode app reads this index to browse, then downloads and verifies the .jext to install
   it.
 extensions:
+  - uniqueName: jcode.ext.openchamber
+    name: OpenChamber
+    publisher: jcode
+    type: app
+    version: 0.1.0
+    category: AI
+    subcategory: Agents
+    shortDescription: >-
+      AI coding agent in your IDE — the OpenChamber UI for the opencode agent, running entirely in
+      the JCode Linux runtime.
+    minJCodeVersion: 1.0.0
+    targetJCodeVersion: 1.0.0
+    jext: dist/jcode.ext.openchamber-0.1.0.jext
+    fingerprint:
+      algo: sha256
+      value: ab2803ab1978ab3bfe08a9d16cbaf17135eeb5b45f476084f97bb5ee5a32ee09
+    requires:
+      sdks: []
+      lsps: []
+      extensions: []
+    suggests:
+      sdks: []
+      lsps: []
+      extensions: []
+    supportedArches:
+      - arm64
+    images:
+      icon: null
+      samples: []
+      walkthrough: []
   - uniqueName: jcode.ext.sqlclient
     name: SQL Client
     publisher: jcode

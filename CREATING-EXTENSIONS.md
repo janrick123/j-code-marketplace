@@ -52,8 +52,8 @@ jext init my-lang --type language --name "My Language Pack" \
   --id jcode.lang.mylang --publisher you
 ```
 
-Types: `language`, `templates`, `formatter`, `theme`, `icons`
-(`language` and `templates` are functional today; the rest are reserved).
+Types: `language`, `templates`, `app`, `dbmanager`, `formatter`, `theme`, `icons`
+(`language`, `templates`, `app`, and `dbmanager` are functional today; the rest are reserved).
 `init` writes `extension.jehm`, an `extension.yaml` stub, an empty `media/`, and a
 `README.md`.
 
@@ -90,7 +90,7 @@ images:
   walkthrough: []
 entry:
   manifest: extension.yaml           # the functional manifest below
-  ui: null                           # reserved (extensions with their own UI)
+  ui: null                           # web frontend for `app`/`dbmanager` types, e.g. www/index.html
   libs: []                           # reserved
 fingerprint: { algo: sha256, value: null }   # reserved; integrity lives in .jext-manifest.json
 ---
@@ -188,6 +188,36 @@ recipe:                                     # ordered bash steps run in the runt
 The scaffolder substitutes `{{projectDir}}` (the new project's path),
 `{{hostStaging}}` (a scratch dir), and `{{name}}`. Writing a `.jcode/run.yaml`
 (last step above) makes the project's **Build & Run** work immediately.
+
+### `type: app` / `type: dbmanager` — web UI + Extension API
+
+Extensions with their own screen ship a web frontend and point the header at it
+(`entry.ui: www/index.html`). JCode hosts the page in a WebView: `app` extensions
+get a **Manage** button on their detail page; `dbmanager` extensions are also
+listed in the right-drawer **DB Managers** panel.
+
+```yaml
+# extension.yaml
+id: jcode.ext.mytool
+name: My Tool
+version: 1.0.0
+type: app
+description: One-line row text.
+longDescription: Paragraph for the detail page.
+api:                       # opt in to the versioned Extension API (recommended)
+  minApiVersion: 1
+  capabilities: [exec, workbench]
+```
+
+The page talks to the IDE and the Linux runtime through the **JCode Extension
+API**: a versioned request envelope (`JCodeNative.request`) with capability-gated
+route families — `exec.*` (run commands in the runtime), `fs.*` (project file IO),
+`workbench.*` (open files, notices, focused-file context) — plus host events like
+`activeFile`. Full reference, JS boilerplate, and the trust model:
+**[docs/EXTENSION-API.md](docs/EXTENSION-API.md)**. Working examples:
+`j-code-ext-vm-mngr` / `j-code-ext-sql-client` (legacy exec bridge) and
+[`jcode-ext-openchamber`](https://github.com/blamspotdev/jcode-ext-openchamber)
+(API v1).
 
 ## 5. Validate
 
