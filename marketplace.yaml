@@ -25,7 +25,11 @@ extensions:
     jext: dist/jcode.ext.openchamber-0.2.4.jext
     fingerprint:
       algo: sha256
-      value: 02a011ff758c3da330665c668d609ad8cf47c3dd20c0c04e57196f637bf2e91c
+      value: b86399b0305bdf356b69de7b18a7170105b48916f15f5904892ad0588a12f5f3
+    authors:
+      - Bohdan Triapitsyn (OpenChamber)
+      - SST (opencode)
+      - jcode (packaging)
     requires:
       sdks: []
       lsps: []
