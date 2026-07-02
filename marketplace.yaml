@@ -14,7 +14,7 @@ extensions:
     name: OpenChamber
     publisher: jcode
     type: app
-    version: 0.2.2
+    version: 0.2.3
     category: AI
     subcategory: Agents
     shortDescription: >-
@@ -22,10 +22,10 @@ extensions:
       (no Node.js needed).
     minJCodeVersion: 1.0.0
     targetJCodeVersion: 1.0.0
-    jext: dist/jcode.ext.openchamber-0.2.2.jext
+    jext: dist/jcode.ext.openchamber-0.2.3.jext
     fingerprint:
       algo: sha256
-      value: 7013e176f66c10fee44d39350c42853df9d4712dad5d40cf1017342f3fea53a0
+      value: 8823293791af970a7fb6db2e9b3c36d5df86babfa2d433834f466efeb3e33674
     requires:
       sdks: []
       lsps: []
@@ -37,9 +37,10 @@ extensions:
     supportedArches:
       - arm64
     images:
-      icon: null
+      icon: media/icon.png
       samples: []
       walkthrough: []
+    icon: dist/icons/jcode.ext.openchamber.png
   - uniqueName: jcode.ext.sqlclient
     name: SQL Client
     publisher: jcode
