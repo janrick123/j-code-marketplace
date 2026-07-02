@@ -14,18 +14,18 @@ extensions:
     name: OpenChamber
     publisher: jcode
     type: app
-    version: 0.1.0
+    version: 0.2.0
     category: AI
     subcategory: Agents
     shortDescription: >-
-      AI coding agent in your IDE — the OpenChamber UI for the opencode agent, running entirely in
-      the JCode Linux runtime.
+      AI coding agent chat in your IDE — the OpenChamber UI for opencode, shipped as a static bundle
+      (no Node.js needed).
     minJCodeVersion: 1.0.0
     targetJCodeVersion: 1.0.0
-    jext: dist/jcode.ext.openchamber-0.1.0.jext
+    jext: dist/jcode.ext.openchamber-0.2.0.jext
     fingerprint:
       algo: sha256
-      value: ab2803ab1978ab3bfe08a9d16cbaf17135eeb5b45f476084f97bb5ee5a32ee09
+      value: bef24e5a7eae624342d8afe1656db1eb9788fdfd9d47756dc96e3c32f5313314
     requires:
       sdks: []
       lsps: []
