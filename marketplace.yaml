@@ -49,7 +49,7 @@ extensions:
     name: SQL Client
     publisher: jcode
     type: dbmanager
-    version: 0.2.0
+    version: 0.2.1
     category: Databases
     subcategory: SQL Server
     shortDescription: >-
@@ -57,10 +57,10 @@ extensions:
       back up/restore.
     minJCodeVersion: 1.0.0
     targetJCodeVersion: 1.0.0
-    jext: dist/jcode.ext.sqlclient-0.2.0.jext
+    jext: dist/jcode.ext.sqlclient-0.2.1.jext
     fingerprint:
       algo: sha256
-      value: 78b4126f02382f6d8e3481ae9e959f4084116a6cbcea403976f40f1d0f599c18
+      value: 951936c0b6c7b306ce76e9b374f582e6a01ff736a1f9dbd11540570d06eaa2e1
     authors:
       - jcode
       - blamspotdev
@@ -75,23 +75,24 @@ extensions:
     supportedArches:
       - arm64
     images:
-      icon: null
+      icon: media/icon.png
       samples: []
       walkthrough: []
+    icon: dist/icons/jcode.ext.sqlclient.png
   - uniqueName: jcode.ext.vmmanager
     name: VM Manager
     publisher: jcode
     type: app
-    version: 0.1.0
+    version: 0.1.1
     category: Virtualization
     subcategory: QEMU
     shortDescription: Create and run x86/x86_64 virtual machines with QEMU — for software with no ARM build.
     minJCodeVersion: 1.0.0
     targetJCodeVersion: 1.0.0
-    jext: dist/jcode.ext.vmmanager-0.1.0.jext
+    jext: dist/jcode.ext.vmmanager-0.1.1.jext
     fingerprint:
       algo: sha256
-      value: 52684dbb617787caba7a832a80855ee7f623ccbfac825ac331f7f0af2461a981
+      value: ddfaf48bb9e9baeec2fa5b6759a35c44396af3098fc7be46d5a5cbd0b22b6b0c
     requires:
       sdks:
         - qemu-system-x86
@@ -104,23 +105,24 @@ extensions:
     supportedArches:
       - arm64
     images:
-      icon: null
+      icon: media/icon.png
       samples: []
       walkthrough: []
+    icon: dist/icons/jcode.ext.vmmanager.png
   - uniqueName: jcode.lang.csharp
     name: C# Language Pack
     publisher: jcode
     type: language
-    version: 0.2.0
+    version: 0.2.1
     category: Languages
     subcategory: C#
     shortDescription: Coding suggestions, a basic formatter, and helpers for C#.
     minJCodeVersion: 1.0.0
     targetJCodeVersion: 1.0.0
-    jext: dist/jcode.lang.csharp-0.2.0.jext
+    jext: dist/jcode.lang.csharp-0.2.1.jext
     fingerprint:
       algo: sha256
-      value: c898bd3d40c03374a97d65c9160a5cee27bda83b0883084d0c6340b0e40caa6f
+      value: 99fb3ce3459f9852adf6d61956ed2011a1b08c6e62c1caa33e86c432512d2a92
     requires:
       sdks:
         - dotnet
@@ -132,24 +134,23 @@ extensions:
         - csharp-language-server
       extensions: []
     images:
-      icon: media/icon.png
+      icon: media/icon.pngmedia/icon.png
       samples: []
       walkthrough: []
-    icon: dist/icons/jcode.lang.csharp.png
   - uniqueName: jcode.lang.javascript
     name: JavaScript Language Pack
     publisher: jcode
     type: language
-    version: 0.1.0
+    version: 0.1.1
     category: Languages
     subcategory: JavaScript
     shortDescription: Coding suggestions, a basic formatter, and helpers for JavaScript.
     minJCodeVersion: 1.0.0
     targetJCodeVersion: 1.0.0
-    jext: dist/jcode.lang.javascript-0.1.0.jext
+    jext: dist/jcode.lang.javascript-0.1.1.jext
     fingerprint:
       algo: sha256
-      value: 040b8829d9b1dca899b8d0447df30022038d06c5585dc3117316abd248a8e574
+      value: 60dd37f2a6cd59958c35b5ef9de6e1041d0a82ea0f7a5aa4583e838ab21ed339
     requires:
       sdks:
         - nodejs
@@ -161,24 +162,23 @@ extensions:
         - typescript-language-server
       extensions: []
     images:
-      icon: media/icon.png
+      icon: media/icon.pngmedia/icon.png
       samples: []
       walkthrough: []
-    icon: dist/icons/jcode.lang.javascript.png
   - uniqueName: jcode.lang.kotlin
     name: Kotlin Language Pack
     publisher: jcode
     type: language
-    version: 0.1.0
+    version: 0.1.1
     category: Languages
     subcategory: Kotlin
     shortDescription: Coloring, completions, snippets, and a basic formatter for Kotlin.
     minJCodeVersion: 1.0.0
     targetJCodeVersion: 1.0.0
-    jext: dist/jcode.lang.kotlin-0.1.0.jext
+    jext: dist/jcode.lang.kotlin-0.1.1.jext
     fingerprint:
       algo: sha256
-      value: 8c923f74d811c66de9bd603bf65b650e9171fadfd29620d9b4dce11d52f30746
+      value: 4ac551fdfbde6ab8c39816151c013eca173171f6dabe8e2514efb97c007d4cc4
     authors:
       - jcode
     requires:
@@ -191,14 +191,15 @@ extensions:
         - kotlin-language-server
       extensions: []
     images:
-      icon: null
+      icon: media/icon.png
       samples: []
       walkthrough: []
+    icon: dist/icons/jcode.lang.kotlin.png
   - uniqueName: jcode.lang.markup
     name: Markup Language Pack
     publisher: jcode
     type: language
-    version: 1.0.0
+    version: 1.0.1
     category: Languages
     subcategory: Markup
     shortDescription: >-
@@ -206,10 +207,10 @@ extensions:
       INI.
     minJCodeVersion: 1.0.0
     targetJCodeVersion: 1.0.0
-    jext: dist/jcode.lang.markup-1.0.0.jext
+    jext: dist/jcode.lang.markup-1.0.1.jext
     fingerprint:
       algo: sha256
-      value: 53039f5e6d485a19930adb577683de3142339556ad1920d6508ab29705a8ba40
+      value: 8695fedef3bcf9b1e15bac272996f646ae6e7a8e6e5e1aa2c2c638375a251778
     requires:
       sdks: []
       lsps: []
@@ -219,24 +220,23 @@ extensions:
       lsps: []
       extensions: []
     images:
-      icon: media/icon.png
+      icon: media/icon.pngmedia/icon.png
       samples: []
       walkthrough: []
-    icon: dist/icons/jcode.lang.markup.png
   - uniqueName: jcode.lang.python
     name: Python Language Pack
     publisher: jcode
     type: language
-    version: 0.1.0
+    version: 0.1.1
     category: Languages
     subcategory: Python
     shortDescription: Coloring, completions, snippets, and a basic formatter for Python.
     minJCodeVersion: 1.0.0
     targetJCodeVersion: 1.0.0
-    jext: dist/jcode.lang.python-0.1.0.jext
+    jext: dist/jcode.lang.python-0.1.1.jext
     fingerprint:
       algo: sha256
-      value: 4dcfef1c33f7aa165c300e9ca5b59896e428be03583c0af30a75c3b58f16010b
+      value: cb43c6a422acc9b956e8b7e288a7b19da0e2a9d643970dcccf2b399f6132a0d3
     authors:
       - jcode
     requires:
@@ -250,14 +250,15 @@ extensions:
         - pyright
       extensions: []
     images:
-      icon: null
+      icon: media/icon.png
       samples: []
       walkthrough: []
+    icon: dist/icons/jcode.lang.python.png
   - uniqueName: jcode.lang.stylesheet
     name: Style Sheet Language Pack
     publisher: jcode
     type: language
-    version: 1.0.0
+    version: 1.0.1
     category: Languages
     subcategory: Style Sheets
     shortDescription: >-
@@ -265,10 +266,10 @@ extensions:
       DSSSL.
     minJCodeVersion: 1.0.0
     targetJCodeVersion: 1.0.0
-    jext: dist/jcode.lang.stylesheet-1.0.0.jext
+    jext: dist/jcode.lang.stylesheet-1.0.1.jext
     fingerprint:
       algo: sha256
-      value: 81686118db297f1fbe5b31e139137fa958d8e7b8c1580422bd6e62ae34251b4c
+      value: 0b3f012b121e17d590a0923c93517ea1855056ad877a2798f950aef3afa17199
     requires:
       sdks: []
       lsps: []
@@ -278,24 +279,23 @@ extensions:
       lsps: []
       extensions: []
     images:
-      icon: media/icon.png
+      icon: media/icon.pngmedia/icon.png
       samples: []
       walkthrough: []
-    icon: dist/icons/jcode.lang.stylesheet.png
   - uniqueName: jcode.lang.typescript
     name: TypeScript Language Pack
     publisher: jcode
     type: language
-    version: 0.1.0
+    version: 0.1.1
     category: Languages
     subcategory: TypeScript
     shortDescription: Coding suggestions, a basic formatter, and helpers for TypeScript.
     minJCodeVersion: 1.0.0
     targetJCodeVersion: 1.0.0
-    jext: dist/jcode.lang.typescript-0.1.0.jext
+    jext: dist/jcode.lang.typescript-0.1.1.jext
     fingerprint:
       algo: sha256
-      value: df325438c67c4caf05aa673497a73b893ec128c38e74bc018c3b2f4634c1a0a6
+      value: 927bc1b28096c38a0a849f0bbe3ee23d6c63a52a0675e75b90102c87918bb1c3
     requires:
       sdks:
         - nodejs
@@ -307,15 +307,14 @@ extensions:
         - typescript-language-server
       extensions: []
     images:
-      icon: media/icon.png
+      icon: media/icon.pngmedia/icon.png
       samples: []
       walkthrough: []
-    icon: dist/icons/jcode.lang.typescript.png
   - uniqueName: jcode.pack.android
     name: Android Dev Pack
     publisher: jcode
     type: language
-    version: 0.3.0
+    version: 0.3.1
     category: Languages
     subcategory: Android
     shortDescription: >-
@@ -323,10 +322,10 @@ extensions:
       features via the Kotlin Language Pack).
     minJCodeVersion: 1.0.0
     targetJCodeVersion: 1.0.0
-    jext: dist/jcode.pack.android-0.3.0.jext
+    jext: dist/jcode.pack.android-0.3.1.jext
     fingerprint:
       algo: sha256
-      value: 6a893191e56f7a183031f3936cbbed5b45b9bdd6644a1494e89daffd34f93766
+      value: ab9d3a4bdd588aa6417c2082cc8f498ba0e7b712f3ea8bb9169f672866359352
     authors:
       - jcode
     requires:
@@ -341,9 +340,10 @@ extensions:
         - kotlin-language-server
       extensions: []
     images:
-      icon: null
+      icon: media/icon.png
       samples: []
       walkthrough: []
+    icon: dist/icons/jcode.pack.android.png
   - uniqueName: jcode.templates
     name: JCode Project Templates
     publisher: jcode
