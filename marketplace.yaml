@@ -12,9 +12,9 @@ description: >-
 extensions:
   - uniqueName: jcode.ext.openchamber
     name: OpenChamber
-    publisher: jcode
+    publisher: openchamber
     type: app
-    version: 0.2.3
+    version: 0.2.4
     category: AI
     subcategory: Agents
     shortDescription: >-
@@ -22,10 +22,10 @@ extensions:
       (no Node.js needed).
     minJCodeVersion: 1.0.0
     targetJCodeVersion: 1.0.0
-    jext: dist/jcode.ext.openchamber-0.2.3.jext
+    jext: dist/jcode.ext.openchamber-0.2.4.jext
     fingerprint:
       algo: sha256
-      value: 8823293791af970a7fb6db2e9b3c36d5df86babfa2d433834f466efeb3e33674
+      value: 02a011ff758c3da330665c668d609ad8cf47c3dd20c0c04e57196f637bf2e91c
     requires:
       sdks: []
       lsps: []
